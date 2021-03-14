@@ -1,0 +1,18 @@
+[package]
+name = "http-filter"
+version = "0.0.1-alpha1"
+authors = ["Jeff Smick <jeff@squishtech.com>"]
+edition = "2018"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "http_filter"
+crate-type = ["cdylib"]
+
+[dependencies]
+envoy = { package = "envoy-sdk", version = "0.2.0-alpha.1" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = "0.4"
